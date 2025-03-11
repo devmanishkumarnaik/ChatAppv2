@@ -1,0 +1,12 @@
+export const orange = "#000";
+export const orangeLight = "rgba(248, 160, 167, 0.2)";
+export const grayColor = "rgba(247, 247, 247, 1)";
+export const lightBlue = "#2694ab";
+export const matBlack = "#1c1c1c";
+//export const bgGradient = "linear-gradient(rgb(255, 255, 209), rgb(249 159 159))";
+export const bgGradient = "linear-gradient(rgb(50, 50, 50), rgb(10, 10, 10))";
+//export const bgGradient = "url('https://wallpaperaccess.com/full/2054934.png')";
+// export const backgroundImage = "url('https://wallpapers.com/images/high/emoticons-and-symbols-whatsapp-chat-81z2ulpylfyqalb3.webp')";
+export const backgroundImage = "url('https://wallpaperaccess.com/full/2054934.png')"
+export const purple = "rgba(75, 12, 192, 1)";
+export const purpleLight = "rgba(75, 12, 192, 0.2)";

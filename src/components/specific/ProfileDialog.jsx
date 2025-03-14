@@ -28,7 +28,7 @@ const ProfileDialog = ({ user }) => {
       }}
     >
       <DialogTitle sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        User Profile
+        My Profile
         <IconButton
           edge="end"
           color="inherit"

@@ -145,7 +145,7 @@ const Profile = ({ user }) => {
         Icon={<CalendarIcon />}
       />
 
-      {isVerified ? (
+{/*       {isVerified ? (
         <Profilecard
           heading="Verified Benefits"
           text={
@@ -173,7 +173,7 @@ const Profile = ({ user }) => {
             </Button>
           }
         />
-      )}
+      )} */}
 
       <Modal
         open={openBenefits}

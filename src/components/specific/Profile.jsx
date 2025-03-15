@@ -38,9 +38,9 @@ const Profile = ({ user }) => {
     Alice: "Premium Benefits for Alice",
   };
 
-  const verificationLink = "https://example.com/verify-now-demo"; // Demo verification link
+  const verificationLink = "https://forms.gle/SyDXGTycAN3P1hui6"; // Real verification link
 
-  const isVerified = ["Manish","Shiva"].includes(user?.username);
+  const isVerified = ["Manish"].includes(user?.username);
 
   const handleCloseProfile = () => {
     dispatch(setIsProfile(false));
@@ -145,7 +145,7 @@ const Profile = ({ user }) => {
         Icon={<CalendarIcon />}
       />
 
-{/*       {isVerified ? (
+      {isVerified ? (
         <Profilecard
           heading="Verified Benefits"
           text={
@@ -173,7 +173,7 @@ const Profile = ({ user }) => {
             </Button>
           }
         />
-      )} */}
+      )}
 
       <Modal
         open={openBenefits}
@@ -186,7 +186,7 @@ const Profile = ({ user }) => {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: selectedBenefit === "menu" ? "400px" : "95vw",
+            width: selectedBenefit === "menu" ? "360px" : "95vw",
             height: selectedBenefit === "menu" ? "auto" : "95vh",
             bgcolor: "background.paper",
             boxShadow: 24,

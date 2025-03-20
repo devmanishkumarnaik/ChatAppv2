@@ -63,7 +63,7 @@ const Header = () => {
     dispatch(resetNotificationCount());
   };
   const navigateToGroup = () => navigate("/groups");
-  const videocallaction = () => (window.location.href = "https://chat-videocall.netlify.app");
+  const videocallaction = () => (window.location.href = "https://v-c.netlify.app");
 
   const logoutHandler = async () => {
     try {

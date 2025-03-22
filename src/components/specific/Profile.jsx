@@ -15,7 +15,7 @@ import {
   Close as CloseIcon,
 } from "@mui/icons-material";
 import moment from "moment";
-import { transformImage } from "../../lib/features";
+//import { transformImage } from "../../lib/features";
 import { useDispatch } from "react-redux";
 import { setIsProfile } from "../../redux/reducers/misc";
 import checkpic from "/check.png";
@@ -92,7 +92,7 @@ const Profile = ({ user }) => {
 
       <Box sx={{ position: "relative", display: "inline-block" }}>
         <Avatar
-          src={transformImage(user?.avatar?.url)}
+          src={(user?.avatar?.url)}
           sx={{
             width: 170,
             height: 170,

@@ -232,6 +232,7 @@ const Chat = ({ chatId, user }) => {
             placeholder="Type Message Here..."
             value={message}
             onChange={messageOnChange}
+            style={{ height: '40px' }} // adjust height as needed
           />
           <IconButton
             type="submit"

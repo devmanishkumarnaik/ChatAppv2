@@ -415,7 +415,7 @@ const GroupListItem = memo(({ group, chatId }) => {
     >
       <Stack direction={"row"} spacing={"1rem"} alignItems={"center"}>
         <AvatarCard avatar={avatar} />
-        <Typography>{name}</Typography>
+        <Typography style={{ color: "white" }}>{name}</Typography>
       </Stack>
     </Link>
   );

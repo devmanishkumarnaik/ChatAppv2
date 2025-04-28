@@ -3,12 +3,14 @@ import {
   Button,
   Dialog,
   DialogTitle,
+  IconButton,
   ListItem,
   Skeleton,
   Stack,
   Typography,
 } from "@mui/material";
 import React, { memo } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 import { useDispatch, useSelector } from "react-redux";
 import { useAsyncMutation, useErrors } from "../../hooks/hook";
 import { useAcceptFriendRequestMutation, useGetNotificationsQuery } from "../../redux/api/api";
@@ -34,7 +36,35 @@ const Notifications = () => {
   return (
     <Dialog open={isNotification} onClose={closeHandler}>
       <Stack p={{ xs: "1rem", sm: "2rem" }} maxWidth={"25rem"}>
-        <DialogTitle>Notifications</DialogTitle>
+        <DialogTitle>
+          <Stack
+            direction="row"
+            alignItems="center"
+            justifyContent="space-between"
+            sx={{
+              width: "100%",
+              position: "relative",
+              pr: 4, // Add right padding to prevent overlap
+            }}
+          >
+            <Typography variant="h6">Notifications</Typography>
+            <IconButton
+              onClick={closeHandler}
+              size="medium"
+              sx={{
+                position: "absolute",
+                right: -34,
+                top: -29,
+                color: (theme) => theme.palette.text.secondary,
+                "&:hover": {
+                  backgroundColor: (theme) => theme.palette.action.hover,
+                },
+              }}
+            >
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </Stack>
+        </DialogTitle>
         {isLoading ? (
           <Skeleton />
         ) : (

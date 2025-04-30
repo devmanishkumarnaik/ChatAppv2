@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Box bgcolor={grayColor} height={"100%"}>
       <Typography p={"2rem"} variant='h5' textAlign={"center"}>
-          Select a friend to chat
+          Click the search icon to send a request. Once it's accepted, use the left menu to select your friend and start chatting.
       </Typography>
     </Box>
   )

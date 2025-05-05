@@ -35,7 +35,7 @@
 //         </Typography>
 //       )}
 
-//       {content && <Typography>{content}</Typography>}
+//      {content && <Typography>{content}</Typography>}
 
 //       {attachments.length > 0 &&
 //         attachments.map((attachment, index) => {
